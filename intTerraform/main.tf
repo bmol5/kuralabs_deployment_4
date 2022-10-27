@@ -24,6 +24,10 @@ resource "aws_subnet" "public1" {
   availability_zone       = data.aws_availability_zones.available.names[0]
 }
 
+
+resource "aws_internet_gateway" "gw_1" {
+  vpc_id = aws_vpc.test-vpc.id
+
 resource "aws_instance" "web_server01" {
   ami = "ami-08c40ec9ead489470"
   instance_type = "t2.micro"
