@@ -9,7 +9,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "test-vpc" {
-  cidr_block           = "172.25.0.0/16"
+  cidr_block           = "172.28.0.0/16"
   enable_dns_hostnames = "true"
  
   tags = {
@@ -18,7 +18,7 @@ resource "aws_vpc" "test-vpc" {
 }
 
 resource "aws_subnet" "public1" {
-  cidr_block = "172.25.0.0/18"
+  cidr_block = "172.28.0.0/18"
   vpc_id                  = aws_vpc.test-vpc.id
   map_public_ip_on_launch = "true"
   availability_zone       = data.aws_availability_zones.available.names[0]
