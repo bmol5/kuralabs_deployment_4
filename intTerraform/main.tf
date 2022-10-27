@@ -39,6 +39,11 @@ resource "aws_instance" "web_server01" {
   
 }
 
+data "aws_availability_zones" "available" {
+  state = "available"
+}
+
+
 output "instance_ip" {
   value = aws_instance.web_server01.public_ip
   
