@@ -27,6 +27,7 @@ resource "aws_subnet" "public1" {
 
 resource "aws_internet_gateway" "gw_1" {
   vpc_id = aws_vpc.test-vpc.id
+}
 
 resource "aws_instance" "web_server01" {
   ami = "ami-08c40ec9ead489470"
