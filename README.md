@@ -1,5 +1,5 @@
 <h1 align=center><strong><em>Deployment 4</em></strong></h1>
-<div align=left>This repository will contain information related to the deployment of the URL-shortner flask application. Details can be found in the Deployment instructions or the documentation linked below.</div>
+<div align=left>This repository will contain information related to the deployment of the URL-shortner flask application. The main objective of this deployment will be to work with IaC to deploy the flask application. Details can be found in the Deployment instructions or the documentation linked below.</div>
 
 ## Location of Documentation:
 * Deployment Document: [click here](https://github.com/bmol5/kuralabs_deployment_4/blob/main/Documentation/Deployment4.pdf)
